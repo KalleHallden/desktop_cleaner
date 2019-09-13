@@ -113,6 +113,7 @@ extensions_folders = {
     '.svg': "/Users/kalle/Desktop/kalle/Media/Images",
     '.tif': "/Users/kalle/Desktop/kalle/Media/Images",
     '.tiff': "/Users/kalle/Desktop/kalle/Media/Images",
+    '.CR2': "/Users/kalle/Desktop/kalle/Media/Images",
 #Internet
     '.asp': "/Users/kalle/Desktop/kalle/Other/Internet",
     '.aspx': "/Users/kalle/Desktop/kalle/Other/Internet",
