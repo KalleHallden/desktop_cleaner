@@ -16,7 +16,7 @@ def get_mapping_dict(managing_dir):
 def get_year_month():
     now = datetime.now()
     year = now.strftime("%Y")
-    month = now.strftime("%m")
+    month = now.strftime("%b")
     return year, month
 
 
