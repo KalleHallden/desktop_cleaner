@@ -24,13 +24,13 @@ def create_path(path):
     pathlib.Path(path).mkdir(parents=True, exist_ok=True)
 
 
-def create_destination_file_path_with_year_month(ext_dir):
-    create_path(os.path.join(ext_dir, *get_year_month()))
+def create_destination_file_path(ext_dir, year_month=False):
+    create_path(os.path.join(ext_dir, *get_year_month() if year_month else ''))
 
 
-def get_absolute_file_destination_path(ext_dir, new_name):
-    create_destination_file_path_with_year_month(ext_dir)
-    return os.path.join(ext_dir, *get_year_month(), new_name)
+def get_absolute_file_destination_path(ext_dir, new_name, year_month=False):
+    create_destination_file_path(ext_dir, year_month)
+    return os.path.join(ext_dir, *get_year_month() if year_month else '', new_name)
 
 
 def get_absolute_file_source_path(folder_to_track, file_name):
