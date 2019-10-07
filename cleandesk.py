@@ -23,7 +23,7 @@ class MyHandler(FileSystemEventHandler):
             if filename_w_ext != managed_dir_name and not any([pattern in filename_w_ext for pattern in ignore_files]):
                 # try:
                 filename = os.path.splitext(filename_w_ext)[0]
-                extension = os.path.splitext(filename_w_ext)[1] or 'noname'
+                extension = os.path.splitext(filename_w_ext)[1].lower() or 'noname'
 
                 # get directory as per the extension
                 # get noname by default if file extension does not exist
