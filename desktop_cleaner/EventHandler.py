@@ -28,17 +28,14 @@ def rename_file(source: Path, destination_path: Path):
     :param Path source: source of file to be moved
     :param Path destination_path: path to destination directory
     """
-    if Path(destination_path / source.name).exists():
-        increment = 0
-
-        while True:
-            increment += 1
-            new_name = destination_path / f'{source.stem}_{increment}{source.suffix}'
-
-            if not new_name.exists():
-                return new_name
-    else:
-        return destination_path / source.name
+    new_name = destination_path / source.name
+    
+    incrementer = 1
+    while (new_name.exists()):
+        new_name = destination_path / f'{source.stem}_{incrementer}{source.suffix}'
+        incrementer += 1
+    
+    return new_name
 
 
 class EventHandler(FileSystemEventHandler):
