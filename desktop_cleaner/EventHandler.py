@@ -4,7 +4,7 @@ from pathlib import Path
 
 from watchdog.events import FileSystemEventHandler
 
-from desktop_cleaner.extensions import extension_paths
+from extensions import extension_paths
 
 
 def add_date_to_path(path: Path):
