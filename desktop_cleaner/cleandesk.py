@@ -5,7 +5,7 @@ from time import sleep
 
 from watchdog.observers import Observer
 
-from desktop_cleaner.EventHandler import EventHandler
+from EventHandler import EventHandler
 
 if __name__ == '__main__':
     watch_path = Path.home() / 'Desktop'
