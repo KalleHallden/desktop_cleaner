@@ -16,7 +16,7 @@ pip install -r requierments.txt
 
 Then, follow the instructions for your system:
 
-- [Linux / OSX](./guides/linux-osx.md)
+- [OSX](./guides/linux-osx.md)
 - [Windows](./guides/windows.md)
 
 ### Usage
