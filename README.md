@@ -8,7 +8,7 @@ Desktop cleaner is a python app that watches your Desktop folder and organizes i
 
 ### Installation
 
-Make sure you have python (^2.0) installed, and then install all the requiered libraries by typing the following command on the root of the project:
+Make sure you have python (^2.0) installed, and then install all the required libraries by typing the following command on the root of the project:
 
 ```
 pip install -r requierments.txt
